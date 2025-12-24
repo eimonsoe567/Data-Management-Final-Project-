@@ -100,7 +100,7 @@ with tab_dash:
     avg_cost = round(avg_cost_df.iloc[0]['avg_cost'], 2) if not avg_cost_df.empty and avg_cost_df.iloc[0]['avg_cost'] else 0.0
 
     col1.metric("Total Students", total_students, delta_color="off")
-    col2.metric("Total Assignments", total_services, delta_color="off")
+    col2.metric("Total Services", total_services, delta_color="off")
     col3.metric("Avg. Service Cost", f"${avg_cost}", delta_color="off")
 
     st.markdown("---")
